@@ -11,7 +11,7 @@ def index():
 # test
 @app.route('/assets/<path:filename>')
 def serve_static(filename):
-    return send_from_directory('../backend/static/assets', filename)
+    return send_from_directory('static/assets', filename)
 
 @app.route('/api')
 def hello():
